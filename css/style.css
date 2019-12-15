@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    height: 2000vh;
 }
 
 /* Utilities */
@@ -61,6 +62,190 @@ body {
     font-weight: 700;
 }
 
+/* About */
+#about {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+#about h1.about-headline {
+    font-size: 12rem;
+}
+
+#about .section-headline {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+#about .section-headline span {
+    font-weight: 700;
+}
+
+#about .text {
+    font-size: 1rem;
+}
+
+#about .about-headline.about {
+    margin-left: -4rem;
+    transition: .4s;
+}
+
+#about .about-headline.us {
+    margin-right: -2.5rem !important;
+    margin-top: -15rem;
+    transition: .4s;
+}
+
+#about .headline-container:hover .about-headline.about {
+    margin-left: 15rem;
+}
+
+#about .headline-container:hover .about-headline.us {
+    margin-right: 15rem !important;
+}
+
+/* About -Second Section */
+#about .second-section {
+    margin-top: 5rem !important;
+}
+
+/* About - Third Section */
+#about .third-section {
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+#about .third-section h1 {
+    position: absolute;
+    text-transform: uppercase;
+}
+
+
+
+#about .third-section:hover .be {
+    margin-left: 0rem !important
+}
+
+#about .third-section:hover .happy {
+    margin-top: 13rem !important
+}
+
+#about .third-section:hover .and {
+    margin-top: 0rem !important
+}
+
+#about .third-section:hover .have {
+    margin-left: 35rem !important
+}
+
+#about .third-section:hover .a {
+    margin-top: 10rem !important
+}
+
+#about .third-section:hover .great,
+#about .third-section:hover .life {
+    margin-left: 20rem !important
+}
+
+#about .third-section .be {
+    font-size: 5rem;
+    margin-left: -6rem;
+    /* Supposed : margin-left: 0rem!important */
+    transition: .4s;
+}
+
+#about .third-section .happy {
+    transform: rotate(-90deg);
+    margin-left: -9rem !important;
+    margin-top: 38rem !important;
+    /* Supposed : margin-top: 13rem!important */
+    font-size: 7rem;
+    font-weight: 700;
+    transition: .4s;
+    transition-delay: .4s;
+}
+
+#about .third-section .and {
+    font-size: 12rem;
+    margin-left: 6.4rem;
+    margin-top: -12rem;
+    /* Supposed : margin-top: 0rem!important */
+    font-weight: 200;
+    transition: .4s;
+    transition-delay: .8s;
+}
+
+#about .third-section .have {
+    margin-left: 70rem;
+    /* Supposed : margin-left: 35rem!important */
+    font-size: 12rem;
+    font-weight: 800;
+    transition: .4s;
+    transition-delay: 1s;
+}
+
+#about .third-section .a {
+    font-size: 20rem;
+    margin-left: 6.4rem;
+    margin-top: 26rem;
+    /* Supposed : margin-top: 10rem!important */
+    font-weight: 300;
+    transition: .7s;
+    transition-delay: 1s;
+}
+
+#about .third-section .great {
+    font-size: 10rem;
+    margin-left: 70rem;
+    /* Supposed : margin-left: 20rem!important */
+    margin-top: 11.5rem;
+    font-weight: 300;
+    transition: .5s;
+    transition-delay: 1.5s;
+}
+
+#about .third-section .life {
+    font-size: 8rem;
+    margin-left: 70rem;
+    /* Supposed : margin-left: 20rem!important */
+    margin-top: 20rem;
+    font-weight: 700;
+    transition: .6s;
+    transition-delay: 1.7s;
+}
+
+@media(max-width: 924px) {
+    #header .jumbotron .container .row h1 {
+        font-size: 3.5rem;
+    }
+
+    #header .jumbotron .container .row {
+        width: 100%;
+        margin-left: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    #about .about-headline.us {
+        margin-right: -2.5rem !important;
+        margin-top: 0rem;
+    }
+
+    #about .headline-container:hover .about-headline.about {
+        margin-left: 8rem;
+    }
+
+    #about .headline-container:hover .about-headline.us {
+        margin-right: 20rem !important;
+    }
+
+    #about .third-section {
+        display: none;
+    }
+}
+
 @media(max-width: 768px) {
     #header .jumbotron .container .row h1 {
         font-size: 3.5rem;
@@ -70,5 +255,22 @@ body {
         width: 100%;
         margin-left: 1.5rem;
         padding-top: 2rem;
+    }
+
+    #about .about-headline.us {
+        margin-right: -2.5rem !important;
+        margin-top: 0rem;
+    }
+
+    #about .headline-container:hover .about-headline.about {
+        margin-left: 5rem;
+    }
+
+    #about .headline-container:hover .about-headline.us {
+        margin-right: 15rem !important;
+    }
+
+    #about .third-section {
+        display: none;
     }
 }
