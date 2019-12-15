@@ -1,5 +1,10 @@
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Utilities */
+.typed-cursor {
+    display: none;
 }
 
 /* Navbar */
@@ -17,4 +22,53 @@ body {
 
 .nav-item:hover {
     border: 3px solid rgb(99, 98, 98, 1);
+}
+
+/* Header */
+#header .jumbotron {
+    background: url('./../img/header3.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    object-fit: cover;
+    height: 28rem;
+    width: 100%;
+    padding: 0px !important;
+}
+
+#header .jumbotron .container {
+    background: linear-gradient(90deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0));
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 100%;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+#header .jumbotron .container .row {
+    width: 100%;
+    margin-left: 3rem;
+    padding-top: 2rem;
+}
+
+#header .jumbotron .container .row h1 {
+    font-size: 4rem;
+    margin: 1.5rem 0px;
+    font-weight: 300;
+}
+
+#header .jumbotron .container .row h1:nth-child(2),
+#header .jumbotron .container .row span {
+    font-weight: 700;
+}
+
+@media(max-width: 768px) {
+    #header .jumbotron .container .row h1 {
+        font-size: 3.5rem;
+    }
+
+    #header .jumbotron .container .row {
+        width: 100%;
+        margin-left: 1.5rem;
+        padding-top: 2rem;
+    }
 }
